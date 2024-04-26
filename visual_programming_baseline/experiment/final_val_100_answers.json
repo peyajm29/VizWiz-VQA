@@ -1,0 +1,402 @@
+[
+    {
+        "image": "VizWiz_val_00000028.jpg",
+        "answer": "yes"
+    },
+    {
+        "image": "VizWiz_val_00000037.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000075.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000078.jpg",
+        "answer": "windows"
+    },
+    {
+        "image": "VizWiz_val_00000084.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000090.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000095.jpg",
+        "answer": "words"
+    },
+    {
+        "image": "VizWiz_val_00000100.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000101.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000102.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000114.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000130.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00000569.jpg",
+        "answer": "none"
+    },
+    {
+        "image": "VizWiz_val_00000616.jpg",
+        "answer": "b"
+    },
+    {
+        "image": "VizWiz_val_00000760.jpg",
+        "answer": "799999"
+    },
+    {
+        "image": "VizWiz_val_00000973.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_val_00001199.jpg",
+        "answer": "72"
+    },
+    {
+        "image": "VizWiz_val_00001342.jpg",
+        "answer": "on left"
+    },
+    {
+        "image": "VizWiz_val_00001366.jpg",
+        "answer": "5"
+    },
+    {
+        "image": "VizWiz_val_00001674.jpg",
+        "answer": "2009"
+    },
+    {
+        "image": "VizWiz_val_00001975.jpg",
+        "answer": "100"
+    },
+    {
+        "image": "VizWiz_val_00001997.jpg",
+        "answer": "honeywell"
+    },
+    {
+        "image": "VizWiz_val_00001999.jpg",
+        "answer": "british"
+    },
+    {
+        "image": "VizWiz_val_00002264.jpg",
+        "answer": "$ 5. 00"
+    },
+    {
+        "image": "VizWiz_train_00000001.jpg",
+        "answer": "no medicine"
+    },
+    {
+        "image": "VizWiz_train_00000104.jpg",
+        "answer": "closed"
+    },
+    {
+        "image": "VizWiz_train_00000119.jpg",
+        "answer": "nothing"
+    },
+    {
+        "image": "VizWiz_train_00000070.jpg",
+        "answer": "yes"
+    },
+    {
+        "image": "VizWiz_train_00000035.jpg",
+        "answer": "no call"
+    },
+    {
+        "image": "VizWiz_train_00000093.jpg",
+        "answer": "unanswerable"
+    },
+    {
+        "image": "VizWiz_train_00000101.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000064.jpg",
+        "answer": "no person"
+    },
+    {
+        "image": "VizWiz_train_00000024.jpg",
+        "answer": "cat"
+    },
+    {
+        "image": "VizWiz_train_00000058.jpg",
+        "answer": "unanswerable"
+    },
+    {
+        "image": "VizWiz_train_00000089.jpg",
+        "answer": "words"
+    },
+    {
+        "image": "VizWiz_train_00000087.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000006.jpg",
+        "answer": "image"
+    },
+    {
+        "image": "VizWiz_train_00000068.jpg",
+        "answer": "nothing"
+    },
+    {
+        "image": "VizWiz_train_00000073.jpg",
+        "answer": "nothing"
+    },
+    {
+        "image": "VizWiz_train_00000117.jpg",
+        "answer": "harry potter"
+    },
+    {
+        "image": "VizWiz_train_00000081.jpg",
+        "answer": "easy does it"
+    },
+    {
+        "image": "VizWiz_train_00000099.jpg",
+        "answer": "nothing"
+    },
+    {
+        "image": "VizWiz_train_00000034.jpg",
+        "answer": "small"
+    },
+    {
+        "image": "VizWiz_train_00000008.jpg",
+        "answer": "unanswerable"
+    },
+    {
+        "image": "VizWiz_train_00000010.jpg",
+        "answer": "unanswerable"
+    },
+    {
+        "image": "VizWiz_train_00000118.jpg",
+        "answer": "convoi"
+    },
+    {
+        "image": "VizWiz_train_00000019.jpg",
+        "answer": "0"
+    },
+    {
+        "image": "VizWiz_train_00000055.jpg",
+        "answer": "phone"
+    },
+    {
+        "image": "VizWiz_train_00000031.jpg",
+        "answer": "logo"
+    },
+    {
+        "image": "VizWiz_train_00000066.jpg",
+        "answer": "ctrl"
+    },
+    {
+        "image": "VizWiz_train_00000121.jpg",
+        "answer": "ctrl"
+    },
+    {
+        "image": "VizWiz_train_00000134.jpg",
+        "answer": "paint"
+    },
+    {
+        "image": "VizWiz_train_00000100.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000112.jpg",
+        "answer": "label on bottle"
+    },
+    {
+        "image": "VizWiz_train_00000110.jpg",
+        "answer": "gas x"
+    },
+    {
+        "image": "VizWiz_train_00000052.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000074.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000011.jpg",
+        "answer": "red"
+    },
+    {
+        "image": "VizWiz_train_00000013.jpg",
+        "answer": "man"
+    },
+    {
+        "image": "VizWiz_train_00000122.jpg",
+        "answer": "curtain"
+    },
+    {
+        "image": "VizWiz_train_00000136.jpg",
+        "answer": "nothing"
+    },
+    {
+        "image": "VizWiz_train_00000069.jpg",
+        "answer": "man made"
+    },
+    {
+        "image": "VizWiz_train_00000084.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000096.jpg",
+        "answer": "unanswerable"
+    },
+    {
+        "image": "VizWiz_train_00000036.jpg",
+        "answer": "can't tell"
+    },
+    {
+        "image": "VizWiz_train_00000061.jpg",
+        "answer": "chips"
+    },
+    {
+        "image": "VizWiz_train_00000038.jpg",
+        "answer": "not sure"
+    },
+    {
+        "image": "VizWiz_train_00000039.jpg",
+        "answer": "1. 00"
+    },
+    {
+        "image": "VizWiz_train_00000065.jpg",
+        "answer": "words"
+    },
+    {
+        "image": "VizWiz_train_00000044.jpg",
+        "answer": "7"
+    },
+    {
+        "image": "VizWiz_train_00000000.jpg",
+        "answer": "yes"
+    },
+    {
+        "image": "VizWiz_train_00000033.jpg",
+        "answer": "herbal essences"
+    },
+    {
+        "image": "VizWiz_train_00000002.jpg",
+        "answer": "grain express"
+    },
+    {
+        "image": "VizWiz_train_00000043.jpg",
+        "answer": "package"
+    },
+    {
+        "image": "VizWiz_train_00000097.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000082.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000113.jpg",
+        "answer": "dc"
+    },
+    {
+        "image": "VizWiz_train_00000137.jpg",
+        "answer": "writing"
+    },
+    {
+        "image": "VizWiz_train_00000120.jpg",
+        "answer": "hand holding bottle"
+    },
+    {
+        "image": "VizWiz_train_00000077.jpg",
+        "answer": "nothing"
+    },
+    {
+        "image": "VizWiz_train_00000041.jpg",
+        "answer": "unanswerable"
+    },
+    {
+        "image": "VizWiz_train_00000029.jpg",
+        "answer": "brazil"
+    },
+    {
+        "image": "VizWiz_train_00000098.jpg",
+        "answer": "dell"
+    },
+    {
+        "image": "VizWiz_train_00000057.jpg",
+        "answer": "nothing"
+    },
+    {
+        "image": "VizWiz_train_00000021.jpg",
+        "answer": "red"
+    },
+    {
+        "image": "VizWiz_train_00000056.jpg",
+        "answer": "lunch"
+    },
+    {
+        "image": "VizWiz_train_00000060.jpg",
+        "answer": "no book"
+    },
+    {
+        "image": "VizWiz_train_00000040.jpg",
+        "answer": "banana"
+    },
+    {
+        "image": "VizWiz_train_00000107.jpg",
+        "answer": "can't tell"
+    },
+    {
+        "image": "VizWiz_train_00000037.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000049.jpg",
+        "answer": "water"
+    },
+    {
+        "image": "VizWiz_train_00000063.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000091.jpg",
+        "answer": "no label"
+    },
+    {
+        "image": "VizWiz_train_00000094.jpg",
+        "answer": "no words"
+    },
+    {
+        "image": "VizWiz_train_00000018.jpg",
+        "answer": "sitting on desk"
+    },
+    {
+        "image": "VizWiz_train_00000116.jpg",
+        "answer": "no"
+    },
+    {
+        "image": "VizWiz_train_00000045.jpg",
+        "answer": "unknown"
+    },
+    {
+        "image": "VizWiz_train_00000054.jpg",
+        "answer": "milk"
+    },
+    {
+        "image": "VizWiz_train_00000048.jpg",
+        "answer": "toy store"
+    },
+    {
+        "image": "VizWiz_train_00000067.jpg",
+        "answer": "none"
+    }
+]
