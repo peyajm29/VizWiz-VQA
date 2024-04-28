@@ -1,6 +1,7 @@
 from openai import OpenAI
 import os
 import json
+from pathlib import Path
 import numpy as np
 
 API_KEY = os.getenv('OPENAI_API_KEY')
@@ -120,7 +121,8 @@ def generate_user_prompt(image_url, question):
 
 def main():
     # specify input dataset file here
-    data_file = "/Users/peyamowar/Downloads/ML Project/Annotations/val.json"
+    root_dir = Path(os.getcwd()).parent.absolute()
+    data_file = os.path.join(root_dir, "data/val.json")
     with open(data_file, 'r') as file:
         parsed_data = json.load(file)
         
@@ -156,7 +158,7 @@ def main():
         results.append(result)
 
     # store predictions here in a json file
-    output_file_path = "/Users/peyamowar/Downloads/MLProject/Annotations/results-val-number.json"
+    output_file_path = os.path.join(root_dir, "gpt4-turbo-vision/outputs/results-val-number.json")
 
     with open(output_file_path, 'w') as output_file:
         json.dump(results, output_file, indent = 2)
