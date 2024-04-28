@@ -18,7 +18,9 @@ from diffusers import StableDiffusionInpaintPipeline
 from .nms import nms
 from vis_utils import html_embed_image, html_colored_span, vis_masks
 
-##### Adding My Own Parsing Function
+###########################################################
+##### Adding My Own Parsing Functions (Adapted From VizProg)
+###########################################################
 import re
 
 def result_parser(args_dict):
@@ -39,9 +41,6 @@ def result_parser(args_dict):
     return res
 
 def parse_step(step_str,partial=False):
-
-    print("\n\nHere is the parse step_str: ", step_str, "\n\n")
-
     tokens = list(tokenize.generate_tokens(io.StringIO(step_str).readline))
     output_var = tokens[0].string
     step_name = tokens[2].string
@@ -58,14 +57,15 @@ def parse_step(step_str,partial=False):
         args[arg_tokens[2*i].string] = arg_tokens[2*i+1].string
     parsed_result['args'] = args
 
-    print("\n\nHere are the args that are being returned: ", args, "\n\n")
-
     if step_str.startswith("FINAL_RESULT"):
         args = result_parser(args)
         parsed_result['args'] = args
-        print("\n\nHere are the new modified args that are being returned: ", args, "\n\n")
 
     return parsed_result
+
+###########################################################
+##### End of My Own Parsing Function (Adapted From VizProg)
+###########################################################
 
 
 def html_step_name(content):
@@ -96,15 +96,8 @@ class EvalInterpreter():
 
     def parse(self,prog_step):
         parse_result = parse_step(prog_step.prog_str)
-
-        print("\n\nFor parsing purposes of eval operator:")
-        print("Here is the parse result: ", parse_result)
-
         step_name = parse_result['step_name']
         output_var = parse_result['output_var']
-
-        print("Here is the step name: ", step_name)
-        print("Here is the output var: ", output_var)
 
         step_input = eval(parse_result['args']['expr'])
         assert(step_name==self.step_name)
@@ -138,9 +131,7 @@ class EvalInterpreter():
             step_input = step_input.replace('xor','!=')
 
         step_input = step_input.format(**prog_state)
-        print("\n\nHERE IS THE STEP INPUT FOR EVAL: ", step_input, "\n\n")
         step_output = eval(step_input)
-        print("\n\nHERE IS THE STEP OUTPUT FOR EVAL: ", step_output, "\n\n")
         prog_step.state[output_var] = step_output
         if inspect:
             html_str = self.html(eval_expression, step_input, step_output, output_var)
@@ -148,6 +139,11 @@ class EvalInterpreter():
 
         return step_output
 
+
+###########################################################
+##### Modified Result Interpreter (Adapted From VizProg)
+##### Can Now Take In Multiple Inputs in Final Result. 
+###########################################################
 
 class ResultInterpreter():
     step_name = 'RESULT'
@@ -158,12 +154,8 @@ class ResultInterpreter():
     def parse(self,prog_step):
         parse_result = parse_step(prog_step.prog_str)
 
-        print('\n\nHere is the parsed result: ', parse_result, '\n\n')
-
         step_name = parse_result['step_name']
         output_var = parse_result['args']['var']
-
-        print('\n\nHere is the parsed output var from result: ', output_var, '\n\n')
 
         assert(step_name==self.step_name)
         return output_var
@@ -181,9 +173,6 @@ class ResultInterpreter():
     def execute(self,prog_step,inspect=False):
         output_var = self.parse(prog_step)
 
-        print('\n\nHere is the prog_step state: ', prog_step.state, '\n\n')
-        print('\n\nHere is the output variable for result step: ', output_var, '\n\n')
-
         # Modifying output parsing to allow for multiple outputs:
         output = ''
         for o_v in output_var:
@@ -191,12 +180,15 @@ class ResultInterpreter():
                 output += ' ' + prog_step.state[o_v]
             else: output += prog_step.state[o_v]
 
-        # output = prog_step.state[output_var]
         if inspect:
             html_str = self.html(output,output_var)
             return output, html_str
 
         return output
+
+###########################################################
+##### End of Result Interpreter (Adapted From VizProg)
+###########################################################
 
 
 class VQAInterpreter():

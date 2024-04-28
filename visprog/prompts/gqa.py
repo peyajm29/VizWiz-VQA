@@ -171,16 +171,9 @@ ANSWER1=EVAL(expr="'yes' if {ANSWER0} > 0 and else 'no'")
 FINAL_RESULT=RESULT(var=ANSWER1)
 """,
 
-# Adding My Own Examples:
-# """Question: Is this shampoo or conditioner?
-# Program:
-# BOX0=LOC(image=IMAGE,object='shampoo')
-# BOX1=LOC(image=IMAGE,object='conditioner')
-# ANSWER0=COUNT(box=BOX0)
-# ANSWER1=COUNT(box=BOX1)
-# ANSWER2=EVAL(expr="'shampoo' if {ANSWER0} > 0 'conditioner' if {ANSWER1} > 0 else 'neither'")
-# FINAL_RESULT=RESULT(var=ANSWER2) 
-# """
+###########################################################
+##### Adding My Own Examples (Separate From VisProg)
+###########################################################
 
 """Question: Is this shampoo or conditioner?
 Program:
@@ -244,6 +237,10 @@ FINAL_RESULT=RESULT(var=ANSWER1)
 """
 
 ]
+
+###########################################################
+##### End of My Own Examples
+###########################################################
 
 def create_prompt(inputs,num_prompts=8,method='random',seed=42,group=0):
     if method=='all':
