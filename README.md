@@ -11,6 +11,7 @@ vizprog
 │   gpt4-turbo-vision
 │   visprog
 │   evaluation
+|   |   eval-accuracy.py
 │   data
 │   |   train.json
 │   |   val.json
