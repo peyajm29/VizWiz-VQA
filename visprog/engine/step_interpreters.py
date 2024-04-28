@@ -16,7 +16,7 @@ from transformers import (ViltProcessor, ViltForQuestionAnswering,
 from diffusers import StableDiffusionInpaintPipeline
 
 from .nms import nms
-from vis_utils import html_embed_image, html_colored_span, vis_masks
+from visprog.engine.vis_utils import html_embed_image, html_colored_span, vis_masks
 
 ###########################################################
 ##### Adding My Own Parsing Functions (Adapted From VizProg)

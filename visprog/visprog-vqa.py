@@ -92,11 +92,9 @@ if __name__ == '__main__':
     ###########################################################
     ##### Gathering filnames from datasets
     ###########################################################
-
-    root_directory = os.getcwd()
-    print(root_directory)
-
-    # parse_dir = os.path.join('.\', root_directory, '')
+    path = Path(os.getcwd())
+    root = path.parent.absolute()
+    root_directory  = os.path.join(root, "gpt4-turbo-vision/outputs/")
 
     # Train Names
     train_filenames = os.path.join(root_directory, 'results-train.json')
@@ -195,12 +193,12 @@ if __name__ == '__main__':
 
     # Modify depending on which annotations you're referencing 
     # to compare against a particular dataset 
-        
-    with open('../Annotations/val.json', 'r') as file:
+    data_folder = os.path.join(root, "data")
+    with open(os.path.join(data_folder, "val.json"), 'r') as file:
         data = json.load(file)
-    # with open('../Annotations/test.json', 'r') as file:
+    # with open(os.path.join(data_folder, "test.json"), 'r') as file:
     #     data = json.load(file)
-    # with open('../Annotations/train.json', 'r') as file:
+    # with open(os.path.join(data_folder, "train.json"), 'r') as file:
     #     data = json.load(file)
 
     image_question_pairs = []
@@ -244,12 +242,11 @@ if __name__ == '__main__':
         results.append(result)
 
 
-    # Change to whatever name you'd like the results json file to 
-    # be generated as. 
-        
-    # output_file_path = 'final_train_75_answers.json'
-    # output_file_path = 'final_test_100_answers.json'
-    output_file_path = 'final_val_100_answers.json'
+    # Change to whatever name you'd like the results json file to be generated as. 
+    output_file_name = 'final_val_100_answers.json'
+
+    output_dir = os.path.join(root, "visprog/outputs")
+    output_file_path = os.path.join(output_dir, output_file_name)
     with open(output_file_path, 'w') as file:
         json.dump(results, file, indent=4)
 
