@@ -9,6 +9,7 @@ Here is the structure of the repository:
 vizprog
 │   README.md
 │   gpt4-turbo-vision
+│   |   gpt-vqa.py
 │   visprog
 │   evaluation
 |   |   eval-accuracy.py
